@@ -1,0 +1,27 @@
+Write a function that is a number guessing game. 
+
+  So the whole thing is a function.
+
+It should determine a random number from 1-100, 
+
+  Code for choosing a random number. Assign that number to a variable (that won't change for a single user).
+
+and let the user guess the number. 
+
+  Prompt the user to guess a number.
+
+It should report back whether their guess is correct, too high, or too low. 
+
+  Report back using returns? puts?
+
+Important: if the user guesses a number they've already guessed, it should tell them they have previously guessed this number. 
+
+  create a function (or proc? or method?) that keeps track of their guesses in an array, and checks whether there are duplicates.
+
+Until they guess the correct number, it should continue to prompt them. 
+
+  function should have an "until" clause
+
+Once they've guessed the correct number, it should congratulate them and tell them how many guesses they took to solve the problem (minus any duplicate guesses).
+
+  returns a sentence, and tells them the length of the array above
