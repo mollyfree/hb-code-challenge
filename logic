@@ -5,6 +5,7 @@ Write a function that is a number guessing game.
 It should determine a random number from 1-100, 
 
   Code for choosing a random number. Assign that number to a variable (that won't change for a single user).
+  rand(range)?
 
 and let the user guess the number. 
 
