@@ -1,0 +1,34 @@
+# ===============================
+#  MOLLY'S HIGHER/LOWER GAME
+#  Created 11/6/15 for HB Application Challenge
+# ===============================
+
+
+def game
+  answer = rand(1..100)
+  user_history = Array.new
+
+  loop do    
+    puts "Guess a number from 1 to 100."
+    user_guess = gets.chomp.to_i
+    
+    if user_history.include? user_guess
+      puts "You guessed that number already."
+    else
+      user_history << user_guess
+
+      if user_guess == answer
+        puts "You guessed correctly! It only took you #{user_history.length} guesses!"
+        break            
+      else  
+        if user_guess < answer
+          puts "Too low! Try again!"
+        else
+          puts "Too high! Try again!"
+        end
+      end
+    end
+  end
+end
+
+game
